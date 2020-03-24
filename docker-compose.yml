@@ -1,9 +1,10 @@
 version: '2'
 services:
-  anaconda:
+  anaconda3:
     build: .
     volumes:
       - ./notebooks:/opt/notebooks
       - ./data:/opt/data
     ports:
       - "8888:8888"
+    container_name: "anaconda3"
